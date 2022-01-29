@@ -1,6 +1,13 @@
-/// @description Set up this ball
-
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7E1E367D
+/// @DnDArgument : "expr" "-3"
+/// @DnDArgument : "var" "dx"
 dx = -3;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 30DFAE5D
+/// @DnDArgument : "expr" "-3"
+/// @DnDArgument : "var" "dy"
 dy = -3;
-bricks = layer_tilemap_get_id("Bricks");
-shadow = layer_tilemap_get_id("Shadows");
