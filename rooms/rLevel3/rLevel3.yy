@@ -55,9 +55,7 @@
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 ],},"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Debug","tags":[],"resourceType":"GMRTileLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Pickups","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"oBat","path":"objects/oBat/oBat.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":512.0,"resourceVersion":"1.0","name":"inst_6E4C52C3","tags":[],"resourceType":"GMRInstance",},
-      ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":{"name":"graphic_7923BDE0","path":"rooms/rTitleScreen/rTitleScreen.yy",},"frozen":false,"ignore":false,"inheritItemSettings":true,"x":0.0,"y":128.0,"resourceVersion":"1.0","name":"graphic_607E714E","tags":[],"resourceType":"GMRSpriteGraphic",},
         {"spriteId":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":{"name":"graphic_EA90677","path":"rooms/rTitleScreen/rTitleScreen.yy",},"frozen":false,"ignore":false,"inheritItemSettings":true,"x":0.0,"y":192.0,"resourceVersion":"1.0","name":"graphic_1FC9F7C0","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -207,9 +205,7 @@
   "inheritLayers": true,
   "creationCodeFile": "",
   "inheritCode": true,
-  "instanceCreationOrder": [
-    {"name":"inst_6E4C52C3","path":"rooms/rLevel3/rLevel3.yy",},
-  ],
+  "instanceCreationOrder": [],
   "inheritCreationOrder": false,
   "sequenceId": null,
   "roomSettings": {
