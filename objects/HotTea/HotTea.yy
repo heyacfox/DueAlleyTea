@@ -3,7 +3,7 @@
     "name": "hotteaaa",
     "path": "sprites/hotteaaa/hotteaaa.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
