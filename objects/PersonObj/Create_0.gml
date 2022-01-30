@@ -3,12 +3,31 @@
 /// @DnDHash : 129E0A29
 randomize();
 
+/// @DnDAction : YoYo Games.Random.Choose
+/// @DnDVersion : 1
+/// @DnDHash : 1277228F
+/// @DnDInput : 4
+/// @DnDArgument : "var" "personindex"
+/// @DnDArgument : "option" "Person"
+/// @DnDArgument : "option_1" "Person2"
+/// @DnDArgument : "option_2" "Person3"
+/// @DnDArgument : "option_3" "Person4"
+personindex = choose(Person, Person2, Person3, Person4);
+
+/// @DnDAction : YoYo Games.Instances.Set_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 575F0892
+/// @DnDArgument : "spriteind" "personindex"
+sprite_index = personindex;
+image_index = 0;
+
 /// @DnDAction : YoYo Games.Paths.Start_Path
 /// @DnDVersion : 1.1
 /// @DnDHash : 38392330
 /// @DnDArgument : "path" "Path2"
+/// @DnDArgument : "speed" "moveSpeed"
 /// @DnDSaveInfo : "path" "Path2"
-path_start(Path2, 1, path_action_stop, false);
+path_start(Path2, moveSpeed, path_action_stop, false);
 
 /// @DnDAction : YoYo Games.Random.Choose
 /// @DnDVersion : 1

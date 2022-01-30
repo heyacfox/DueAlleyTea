@@ -24,8 +24,26 @@ instance_create_layer(x, y, "Instances", PersonObj);
 /// @DnDArgument : "max" "300"
 var timervar = floor(random_range(120, 300 + 1));
 
-/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 76F0D6D2
-/// @DnDArgument : "steps" "timervar"
-alarm_set(0, timervar);
+/// @DnDHash : 2CEA96F7
+/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_relative" "1"
+/// @DnDArgument : "var" "peopleSpawned"
+peopleSpawned += 1;
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 3975B281
+/// @DnDArgument : "var" "peopleSpawned"
+/// @DnDArgument : "op" "1"
+/// @DnDArgument : "value" "peopleToSpawn"
+if(peopleSpawned < peopleToSpawn)
+{
+	/// @DnDAction : YoYo Games.Instances.Set_Alarm
+	/// @DnDVersion : 1
+	/// @DnDHash : 76F0D6D2
+	/// @DnDParent : 3975B281
+	/// @DnDArgument : "steps" "timervar"
+	alarm_set(0, timervar);
+}

@@ -1,8 +1,8 @@
 /// @DnDAction : YoYo Games.Movement.Set_Gravity_Force
 /// @DnDVersion : 1
 /// @DnDHash : 6103E418
-/// @DnDArgument : "force" "0.05"
-gravity = 0.05;
+/// @DnDArgument : "force" "grav"
+gravity = grav;
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1

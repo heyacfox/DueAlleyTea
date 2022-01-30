@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sBat",
-    "path": "sprites/sBat/sBat.yy",
+    "name": "playerdrone",
+    "path": "sprites/playerdrone/playerdrone.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   ],
   "properties": [
     {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"teaReady","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"15","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"cooldownTime","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"24","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"cooldownTime","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

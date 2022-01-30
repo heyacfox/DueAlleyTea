@@ -17,36 +17,35 @@ if(TeaType == "Hot Tea")
 	/// @DnDHash : 067DF7E0
 	/// @DnDParent : 7DDD1D47
 	/// @DnDArgument : "var" "satisfied"
+	/// @DnDArgument : "not" "1"
 	/// @DnDArgument : "value" "true"
-	if(satisfied == true)
+	if(!(satisfied == true))
 	{
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
+		/// @DnDVersion : 1
+		/// @DnDHash : 20990359
+		/// @DnDApplyTo : {oBatTeaDropper}
+		/// @DnDParent : 067DF7E0
+		/// @DnDArgument : "score" "1"
+		/// @DnDArgument : "score_relative" "1"
+		with(oBatTeaDropper) {
+		if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
+		__dnd_score += real(1);
+		}
 	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 6D6F1F9C
+		/// @DnDParent : 067DF7E0
+		/// @DnDArgument : "expr" "true"
+		/// @DnDArgument : "var" "satisfied"
+		satisfied = true;
+	
+		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 03CEA1BD
+		/// @DnDApplyTo : other
+		/// @DnDParent : 067DF7E0
+		with(other) instance_destroy();
 	}
-
-	/// @DnDAction : YoYo Games.Instance Variables.Set_Score
-	/// @DnDVersion : 1
-	/// @DnDHash : 20990359
-	/// @DnDApplyTo : {oBatTeaDropper}
-	/// @DnDParent : 7DDD1D47
-	/// @DnDArgument : "score" "1"
-	/// @DnDArgument : "score_relative" "1"
-	with(oBatTeaDropper) {
-	if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
-	__dnd_score += real(1);
-	}
-
-	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 6D6F1F9C
-	/// @DnDParent : 7DDD1D47
-	/// @DnDArgument : "expr" "true"
-	/// @DnDArgument : "var" "satisfied"
-	satisfied = true;
-
-	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-	/// @DnDVersion : 1
-	/// @DnDHash : 03CEA1BD
-	/// @DnDApplyTo : other
-	/// @DnDParent : 7DDD1D47
-	with(other) instance_destroy();
 }

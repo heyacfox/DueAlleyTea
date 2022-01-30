@@ -6,15 +6,21 @@
 /// @DnDArgument : "value" "true"
 if(!(satisfied == true))
 {
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 5F637FE5
+	/// @DnDParent : 4BA51192
+	draw_set_font(noone);
+
 	/// @DnDAction : YoYo Games.Drawing.Draw_Value
 	/// @DnDVersion : 1
 	/// @DnDHash : 746399C1
 	/// @DnDParent : 4BA51192
 	/// @DnDArgument : "x" "x"
 	/// @DnDArgument : "y" "y-50"
-	/// @DnDArgument : "caption" ""Wants: ""
+	/// @DnDArgument : "caption" """"
 	/// @DnDArgument : "var" "TeaType"
-	draw_text(x, y-50, string("Wants: ") + string(TeaType));
+	draw_text(x, y-50, string("") + string(TeaType));
 }
 
 /// @DnDAction : YoYo Games.Common.Execute_Code
